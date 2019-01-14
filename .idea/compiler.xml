@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="DIDemo" />
         <module name="IoCndDI" />
+        <module name="spring-core" />
       </profile>
     </annotationProcessing>
   </component>

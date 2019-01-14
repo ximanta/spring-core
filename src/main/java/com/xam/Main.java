@@ -19,15 +19,5 @@ public class Main {
         HelloWorld beanA = (HelloWorld) factory.getBean("helloWorld");
         System.out.println(beanA.getMessage());
 
-        HelloWorld beanB = (HelloWorld) factory.getBean("helloWorld");
-        System.out.println(beanA==beanB);
-
-        BeanDefinitionRegistry beanDefinitionRegistry = new DefaultListableBeanFactory();
-        BeanDefinitionReader beanDefinitionReader = new XmlBeanDefinitionReader(beanDefinitionRegistry);
-        beanDefinitionReader.loadBeanDefinitions(new ClassPathResource("beans.xml"));
-        HelloWorld beanC=(HelloWorld) ((DefaultListableBeanFactory) beanDefinitionRegistry).getBean("helloWorld");
-        System.out.println(beanC.getMessage());
-
-
     }
 }
