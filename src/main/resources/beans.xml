@@ -28,6 +28,9 @@
     destroy-method="customDestroy">
     </bean>
 
+    <bean name="postProcessorDemoBean"  class="com.xam.domain.PostProcessorDemoBean">
+    </bean>
+
 <!--Will throw UnsatisfiedDependencyException caused by NoUniqueBeanDefinitionException -->
     <!--<bean id="helloWorld2" autowire="byType"  class="com.xam.domain.HelloWorld">-->
 

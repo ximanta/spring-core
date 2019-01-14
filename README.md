@@ -12,6 +12,7 @@ Contained in this repo are various applications to demonstrate Spring Framework 
 7.  **autowiring-xml** - Demonstration of Autowiring using XML configuration
 8.  **context-bean-aware** - Demonstration of using ApplicationContextAware, BeanFactoryAware, and BeanNameAware
 9.  **bean-lifecycle** - Demonstration of using InitializingBean, DisposableBean, and custom lifecycle methods
+10.  **bean-post-processor** - Demonstration of using BeanPostProcessor
 
 # License
 

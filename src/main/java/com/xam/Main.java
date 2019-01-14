@@ -21,7 +21,7 @@ public class Main {
         HelloWorld beanA=(HelloWorld) applicationContext.getBean("helloWorldX");
         Quote quote=beanA.getQuote();
         System.out.println(quote.getQuotation() +" by:" + quote.getAuthor());
-        /*Shuts Down Rightaway*/
+        /*Shuts Down right away*/
         applicationContext.close();
         /*Shuts Down later when JVM terminates*/
         applicationContext.registerShutdownHook();
