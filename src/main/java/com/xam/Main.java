@@ -16,9 +16,14 @@ public class Main {
 
     public static void main(String[] args) {
         ApplicationContext applicationContext= (ApplicationContext) new ClassPathXmlApplicationContext("beans.xml");
-        HelloWorld beanA=(HelloWorld) applicationContext.getBean("helloWorld");
+        HelloWorld beanA=(HelloWorld) applicationContext.getBean("helloWorldX");
         Quote quote=beanA.getQuote();
         System.out.println(quote.getQuotation() +" by:" + quote.getAuthor());
+
+
+//        HelloWorld beanB=(HelloWorld) applicationContext.getBean("helloWorld2");
+//        Quote quoteB=beanB.getQuote();
+//        System.out.println(quoteB.getQuotation() +" by:" + quoteB.getAuthor());
 
 
 

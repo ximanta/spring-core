@@ -15,15 +15,17 @@
         <constructor-arg index="1" value="A person doesn't change, their mask falls off."/>
     </bean>
 
-    <bean id="quoteBean3" class="com.xam.domain.Quote">
+    <bean id="quote" class="com.xam.domain.Quote">
         <constructor-arg type="String" value="Anonymous"/>
         <constructor-arg type="String" value="Silence is an answer too."/>
     </bean>
 
-    <bean id="helloWorld" class="com.xam.domain.HelloWorld" scope="singleton">
+    <bean name="helloWorld, helloWorldX" autowire="byName" class="com.xam.domain.HelloWorld">
 
-       <!--<property name="quote" ref="quoteBean3"/>-->
-        <constructor-arg name="quote" ref="quoteBean1"/>
     </bean>
 
+<!--Will throw UnsatisfiedDependencyException caused by NoUniqueBeanDefinitionException -->
+    <!--<bean id="helloWorld2" autowire="byType"  class="com.xam.domain.HelloWorld">-->
+
+    <!--</bean>-->
 </beans>
