@@ -10,7 +10,7 @@ Contained in this repo are various applications to demonstrate Spring Framework 
 5.  **bean-scopes** - Demonstration about Singleton and Prototype Bean Scopes
 6.  **dependency-injection** - Properties and Constructor Injection, Object Injection** 
 7.  **autowiring-xml** - Demonstration of Autowiring using XML configuration
-8. ***context-bean-aware* - Demonstration of using ApplicationContextAware and BeanNameAware
+8.  **context-bean-aware** - Demonstration of using ApplicationContextAware, BeanFactoryAware, and BeanNameAware
 
 
 # License
