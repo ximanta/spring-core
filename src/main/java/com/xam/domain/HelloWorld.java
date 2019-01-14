@@ -13,4 +13,10 @@ public class HelloWorld {
     public void setQuote(Quote quote) {
         this.quote = quote;
     }
+    public void customInit(){
+        System.out.println("##customInit: The HelloWorld Bean has been initialized!");
+    }
+    public void customDestroy(){
+        System.out.println("##customDelete: The HelloWorld Bean has been terminated!");
+    }
 }

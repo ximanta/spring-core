@@ -3,15 +3,12 @@ package com.xam.domain;
 public class Quote {
     private String author;
     private String quotation;
-
     public Quote() {
     }
-
     public Quote(String author, String quotation) {
         this.author = author;
         this.quotation = quotation;
     }
-
     public String getAuthor() {
         return author;
     }

@@ -3,7 +3,7 @@
 <beans xmlns = "http://www.springframework.org/schema/beans"
        xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation = "http://www.springframework.org/schema/beans
-   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" default-init-method="customInit" default-destroy-method="customDestroy">
 
     <bean id="quoteBean1" class="com.xam.domain.Quote">
         <property name="author" value="Pam"/>
@@ -24,7 +24,8 @@
 
     </bean>
 
-    <bean name="lifeCycleDemoBean"  class="com.xam.domain.LifeCycleDemoBean">
+    <bean name="lifeCycleDemoBean"  class="com.xam.domain.LifeCycleDemoBean" init-method="customInit"
+    destroy-method="customDestroy">
     </bean>
 
 <!--Will throw UnsatisfiedDependencyException caused by NoUniqueBeanDefinitionException -->
