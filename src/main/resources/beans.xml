@@ -24,6 +24,9 @@
 
     </bean>
 
+    <bean name="lifeCycleDemoBean"  class="com.xam.domain.LifeCycleDemoBean">
+    </bean>
+
 <!--Will throw UnsatisfiedDependencyException caused by NoUniqueBeanDefinitionException -->
     <!--<bean id="helloWorld2" autowire="byType"  class="com.xam.domain.HelloWorld">-->
 
