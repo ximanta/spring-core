@@ -1,6 +1,9 @@
 package com.xam.domain;
 
-public class Quote {
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+public class Quote  {
     private String author;
     private String quotation;
 
