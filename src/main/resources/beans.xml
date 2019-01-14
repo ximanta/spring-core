@@ -5,9 +5,25 @@
        xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
+    <bean id="quoteBean1" class="com.xam.domain.Quote">
+        <property name="author" value="Pam"/>
+        <property name="quotation" value="Necessity is the mother of all inventions."/>
+    </bean>
+
+    <bean id="quoteBean2" class="com.xam.domain.Quote">
+        <constructor-arg index="0" value="Xam"/>
+        <constructor-arg index="1" value="A person doesn't change, their mask falls off."/>
+    </bean>
+
+    <bean id="quoteBean3" class="com.xam.domain.Quote">
+        <constructor-arg type="String" value="Anonymous"/>
+        <constructor-arg type="String" value="Silence is an answer too."/>
+    </bean>
 
     <bean id="helloWorld" class="com.xam.domain.HelloWorld" scope="singleton">
-        <constructor-arg value="Where there is a will, there is a way"/>
+
+       <!--<property name="quote" ref="quoteBean3"/>-->
+        <constructor-arg name="quote" ref="quoteBean1"/>
     </bean>
 
 </beans>

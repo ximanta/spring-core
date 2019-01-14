@@ -1,15 +1,16 @@
 package com.xam.domain;
 
 public class HelloWorld {
-      public static final String HELLO_MSG = "Hello World!!!!";
-      public String quote;
-    public String getQuote() {
-        return quote;
+    private Quote quote;
+    public HelloWorld() {
     }
-    public HelloWorld(String quote) {
+    public HelloWorld(Quote quote) {
         this.quote = quote;
     }
-    public String getMessage() {
-        return HELLO_MSG;
+    public Quote getQuote() {
+        return quote;
+    }
+    public void setQuote(Quote quote) {
+        this.quote = quote;
     }
 }
